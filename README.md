@@ -3,7 +3,8 @@
 📌 MICCAI 2025 Early Accepted
 
 This work has been Early Accepted to MICCAI 2025, placing in the top 9% of submissions.
-![CurConMix Diagram](assets/FIGURE01.pdf)
+convert -density 300 FIGURE01.pdf -quality 100 assets/Figure.png
+
 🧠 Abstract
 
 Accurately recognizing surgical action triplets in surgical videos is crucial for advancing context-aware systems that deliver real-time feedback, enhancing surgical safety and efficiency. However, recognizing surgical action triplets <instrument, verb, target> is challenging due to subtle variations, complex interdependencies, and severe class imbalance. Most existing approaches focus on individual triplet components while overlooking their interdependencies and the inherent class imbalance in triplet distributions.
