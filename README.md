@@ -3,7 +3,7 @@
 📌 MICCAI 2025 Early Accepted
 
 This work has been Early Accepted to MICCAI 2025, placing in the top 9% of submissions.
-convert -density 300 FIGURE01.pdf -quality 100 assets/Figure.png
+![CurConMix Diagram](assets/Figure.png)
 
 🧠 Abstract
 
