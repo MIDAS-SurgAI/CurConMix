@@ -251,11 +251,11 @@ def train_cross_val_SSL(CFG):
             }
 
             if CFG.feature_mixup:
-                dataset_cls = WeightedSupConFeatureMixupBatchDataset if CFG.label_sim else SupConFeatureMixupBatchDataset
+                dataset_cls = SupConFeatureMixupBatchDataset
             else:
                 dataset_cls = SupConFeatureBatchDataset
 
-            train_dataset = dataset_cls(train_folds, CFG, features=feature_list, labels=label_list, cos_sim_matrix=cos_sim_matrix, label_sim_matrix=label_sim_matrix if CFG.label_sim else None, transform=transform)
+            train_dataset = dataset_cls(train_folds, CFG, features=feature_list, labels=label_list, cos_sim_matrix=cos_sim_matrix, transform=transform)
         else:
             train_dataset = Supcon_TrainDataset(train_folds, CFG, transform=transform)
 
