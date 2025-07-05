@@ -3,7 +3,7 @@
 📌 MICCAI 2025 Early Accepted
 
 This work has been Early Accepted to MICCAI 2025, placing in the top 9% of submissions.
-![CurConMix Diagram](assets/Figure.png)
+![CurConMix Diagram](assets/Figure01.png)
 
 🧠 Abstract
 
