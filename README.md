@@ -1,4 +1,4 @@
-CurConMix: A Curriculum Contrastive Learning Framework for Enhancing Surgical Action Triplet Recognition
+# CurConMix: A Curriculum Contrastive Learning Framework for Enhancing Surgical Action Triplet Recognition
 
 📌 MICCAI 2025 Early Accepted
 
