@@ -20,6 +20,7 @@ Run the following script to perform the entire training pipeline, which includes
 ```bash
 bash train.sh
 
+
 ## Model Checkpoints
 
 Model checkpoints will be available here:
