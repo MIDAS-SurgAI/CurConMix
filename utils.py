@@ -141,7 +141,7 @@ def cholect45_ivtmetrics_mAP_all(df, CFG):
             rec.video_end()
 
         for comp in components:
-            result = rec.compute_video_AP(comp)
+            result = rec.compute_video_AP(comp, ignore_null=CFG.ignore_null)
             mAPs[comp].append(result['mAP'])
             classwise_APs[comp].append(result['AP'])
 
