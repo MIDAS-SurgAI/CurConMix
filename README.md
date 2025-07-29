@@ -18,7 +18,8 @@ We evaluate our framework on the CholecT45 dataset using 5-fold cross-validation
 Run the following script to perform the entire training pipeline, which includes both pre-training with curriculum contrastive learning and fine-tuning with self-distillation and mixup:
 
 ```bash
-bash train.sh```
+bash train.sh
+```
 
 ## Model Checkpoints
 
