@@ -1,12 +1,12 @@
 
     # Paths to read and save data
-    parent_path:  C:/Users/kyuhw/Desktop/work/CholecT50 
-    path_csv: dataframes/CholecT50.csv
+    parent_path: CholecT45 
+    path_csv: dataframes/CholecT45.csv
     train_path: data/
-    output_dir: C:/Users/kyuhw/Desktop/work/sd_temporal/baseline_soft_label_mixup/outputs
+    output_dir: outputs
 
     phase : false
-    cholec80_phase_path : C:\Users\shinp\Desktop\work\dataset\cholec80\phase_annotations
+    cholec80_phase_path : phase_annotations
     
     # General Settings 
     debug: false
@@ -113,4 +113,4 @@
     label_sim : False 
 
     evaluate_all : False
-    ignore_null : False ## null ivt는 무시하는 코드  
+    ignore_null : True
