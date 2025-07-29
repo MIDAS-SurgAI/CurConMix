@@ -1,6 +1,6 @@
 
     # Paths to read and save data
-    parent_path: CholecT45 
+    parent_path: data 
     path_csv: dataframes/CholecT45.csv
     train_path: data/
     output_dir: outputs
@@ -10,7 +10,7 @@
     
     # General Settings 
     debug: false
-    device: cuda:1
+    device: cuda:0
     
     # Hyperparameter
     exp: myexp
@@ -27,14 +27,10 @@
     - 2
     - 3
     - 4
-
-    step_dom : 1
-    step_min : 1
     
     # Target column param 
     col0: tri0
     target_size: 131
-    target_col : multi_tri
     multi: true
     
     # Model hyperparams
@@ -76,7 +72,6 @@
     neptune_api_token:
 
     gradient_accumulation_steps: 2
-    max_grad_norm: 1000
 
     cutout: False
     base_aug: True
@@ -88,8 +83,7 @@
     temp: 0.1
     ssl: False
     label_order : ['t', 'it', 'ivt'] # i, v,t, it, iv, tv, ivt
-    label_order_list : ['target', 'inst_target', 'triplet']
-    # when curriculum is False the last value in the label_order is the label to be used for the loss
+
     ssl_loss : 'supcon'
     method: 'supcon'
     
@@ -110,7 +104,6 @@
     tiny_model : False
     base_model : False
     top_n : 1024     
-    label_sim : False 
 
     evaluate_all : False
     ignore_null : True
