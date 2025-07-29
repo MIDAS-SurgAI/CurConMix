@@ -21,6 +21,14 @@ Run the following script to perform the entire training pipeline, which includes
 bash run_curconmix.sh
 ```
 
+## Dataset
+
+The CholecT45 dataset used in our experiments can be downloaded from the official repository:
+
+🔗 [https://github.com/CAMMA-public/cholect45](https://github.com/CAMMA-public/cholect45)
+
+Please follow the instructions provided in the repository for access and usage guidelines.
+
 ## Model Checkpoints
 
 Model checkpoints will be available here:
