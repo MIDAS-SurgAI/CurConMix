@@ -1,0 +1,116 @@
+
+    # Paths to read and save data
+    parent_path:  C:/Users/kyuhw/Desktop/work/CholecT50 
+    path_csv: dataframes/CholecT50.csv
+    train_path: data/
+    output_dir: C:/Users/kyuhw/Desktop/work/sd_temporal/baseline_soft_label_mixup/outputs
+
+    phase : false
+    cholec80_phase_path : C:\Users\shinp\Desktop\work\dataset\cholec80\phase_annotations
+    
+    # General Settings 
+    debug: false
+    device: cuda:1
+    
+    # Hyperparameter
+    exp: myexp
+    teacher_exp: myexp
+    pretrained_exp : myexp
+    nworkers: 4 # change this 
+
+    # Data split
+    n_fold : 5
+    start_n_fold: 0
+    trn_fold: 
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+
+    step_dom : 1
+    step_min : 1
+    
+    # Target column param 
+    col0: tri0
+    target_size: 131
+    target_col : multi_tri
+    multi: true
+    
+    # Model hyperparams
+    model_name: swin_base_patch4_window7_224 #swin_base_patch4_window7_224   
+    pretrained: true
+    weight_dir : 
+    local_weight : false
+
+    # Augmentation params
+    height: 224  
+    width:  224  
+
+    # Training params
+    epochs: 1
+    T_0: 21  # CosineAnnealingWarmRestarts
+    lr: 2e-4
+    min_lr: 2e-5 #2e-7   30e ->   2e-4(1) -> 2e-5(30)  90 2e-7 
+    batch_size: 64
+    valid_batch_size: 64
+    weight_decay: 1e-6
+    seed: 142
+
+    # Self-distillation
+    SD: 1
+    distill : False
+    # Label smoothing
+    smooth : false
+    ls : 0.1
+
+    # Inference
+    inference : true
+    ensemble : False
+    ensemble_models : 
+    ensemble_avg : False
+
+    # Neptune logging
+    neplog: false
+    neptune_project: 
+    neptune_api_token:
+
+    gradient_accumulation_steps: 2
+    max_grad_norm: 1000
+
+    cutout: False
+    base_aug: True
+    loss: 'bce'
+    optim: 'adamw'
+    pretrained_ssl: False
+    split_selector: 'cholect45-crossval' 
+
+    temp: 0.1
+    ssl: False
+    label_order : ['t', 'it', 'ivt'] # i, v,t, it, iv, tv, ivt
+    label_order_list : ['target', 'inst_target', 'triplet']
+    # when curriculum is False the last value in the label_order is the label to be used for the loss
+    ssl_loss : 'supcon'
+    method: 'supcon'
+    
+    shuffle: True
+    
+    ## Supcon Loss hyperparameter 
+    contrast_mode: 'one'
+
+    mixup : False
+    alpha: 0.4
+    feature_file_name : 'trainset_features_threshold_10.pkl'
+    cos_sim_matrix_file_name : 'similarity_matrix.pkl'
+
+    feature_batch : False 
+    feature_mixup : False ## Feature mixup to make difficult synthesize negative samples 
+    num_negative_samples : 63
+    Base384 : False 
+    tiny_model : False
+    base_model : False
+    top_n : 1024     
+    label_sim : False 
+
+    evaluate_all : False
+    ignore_null : False ## null ivt는 무시하는 코드  
