@@ -29,13 +29,11 @@ The CholecT45 dataset used in our experiments can be downloaded from the officia
 
 Please follow the instructions provided in the repository for access and usage guidelines.
 
-## Model Checkpoints
+## Model Checkpoint Download (Coming soon)
 
 Model checkpoints will be available here:
 
-## Model Checkpoint Download (Coming soon)
-
-Citation (Coming soon)
+## Citation (Coming soon)
 
 If you use our code or models, please consider citing:
 
