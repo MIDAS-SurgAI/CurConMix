@@ -100,20 +100,12 @@ def cholect45_ivtmetrics_mAP(df, CFG):
             rec.video_end()
    
         # Get the final mAP score for the fold
-        result = rec.compute_video_AP('ivt')
+        result = rec.compute_video_AP('ivt', ignore_null=CFG.ignore_null)
         ivt.append(result['mAP'])
         classwise_ap_list.append(result['AP'])
 
-    std_mAP = np.std(ivt)
-    classwise_ap_mean = np.mean(classwise_ap_list, axis=0)
-
-    classwise_ap_df = pd.DataFrame({
-        "class": [f'class_{i}' for i in range(100)],
-        "AP" : classwise_ap_mean
-    })
-    
     # Return the mean mAP value over 5 folds
-    return np.mean(ivt), classwise_ap_df
+    return np.mean(ivt)
 
 def cholect45_ivtmetrics_mAP_all(df, CFG):
     """

@@ -43,8 +43,7 @@ def evaluate(CFG):
     
         # Get the mAP score
         # score = cholect45_ivtmetrics_mAP(df, CFG)
-        score, classwise_ap_df = cholect45_ivtmetrics_mAP(df, CFG)
-        classwise_ap_df.to_csv(f'{experiment_name}_classwise_AP.csv', index=False)
+        score = cholect45_ivtmetrics_mAP(df, CFG)
         print(f"{experiment_name}: {round(score * 100, 2)}%")
 
     # Compute the ensemble of multiple experiments available in CFG.ensemble_models
