@@ -35,14 +35,8 @@ def evaluate(CFG):
     for pred_df in prediction_dfs:
         # Load the dataframe
         df = pd.read_csv(os.path.join(CFG.output_dir, folder, pred_df))
-
-        # Parse the experiment tag
-        #experiment = pred_df.split(".")[0].split('_')[-1]
         experiment = pred_df.split(".")[0].split('_')[1:]
         experiment_name = ('_').join(experiment)
-    
-        # Get the mAP score
-        # score = cholect45_ivtmetrics_mAP(df, CFG)
         score = cholect45_ivtmetrics_mAP(df, CFG)
         print(f"{experiment_name}: {round(score * 100, 2)}%")
 
@@ -78,8 +72,6 @@ def evaluate_all(CFG):
     CFG.target_size = 100
 
     folder = "predictions" if CFG.inference else "oofs"
-    # if CFG.evaluate_all:
-    #     folder = 'Crucial_predictions' if CFG.inference else "oofs"
     prediction_dfs = os.listdir(os.path.join(CFG.output_dir, folder))
 
     for pred_df in prediction_dfs:
@@ -113,7 +105,6 @@ def run(CFG):
         evaluate_all(CFG)
     else:
         evaluate(CFG)
-
-
+        
 if __name__ == "__main__":
     run()
