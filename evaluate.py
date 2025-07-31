@@ -78,8 +78,8 @@ def evaluate_all(CFG):
     CFG.target_size = 100
 
     folder = "predictions" if CFG.inference else "oofs"
-    if CFG.evaluate_all:
-        folder = 'Crucial_predictions' if CFG.inference else "oofs"
+    # if CFG.evaluate_all:
+    #     folder = 'Crucial_predictions' if CFG.inference else "oofs"
     prediction_dfs = os.listdir(os.path.join(CFG.output_dir, folder))
 
     for pred_df in prediction_dfs:
