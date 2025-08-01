@@ -31,7 +31,8 @@ Please follow the instructions provided in the repository for access and usage g
 
 ## Model Checkpoint Download (Coming soon)
 
-Model checkpoints will be available here:
+Model checkpoints and related CSV files are available at the following link:  
+[Download Folder](https://1drv.ms/f/c/d6832cd62003d47f/EnWJati1F9JBgP68ruh3k2YBHaLC_yoZfeNxTBI4KMet4Q?e=HVrcdE)
 
 ## Citation (Coming soon)
 
