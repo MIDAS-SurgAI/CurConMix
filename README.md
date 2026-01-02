@@ -38,12 +38,13 @@ Model checkpoints and related CSV files are available at the following link:
 
 If you use our code or models, please consider citing:
 
-@article{curconmix2025,
-  title     = {CurConMix: A Curriculum Contrastive Learning Framework for Enhancing Surgical Action Triplet Recognition},
-  author    = {...},
-  journal   = {MICCAI},
-  year      = {2025},
-  note      = {Early Accepted}
+@inproceedings{jeon2025curconmix,
+  title={CurConMix: A Curriculum Contrastive Learning Framework for Enhancing Surgical Action Triplet Recognition},
+  author={Jeon, Yongjun and Shin, Jongmin and Park, Seonmin and Kim, Bogeun and Park, Kanggil and Oh, Namkee and Jung, Kyu-Hwan},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={149--158},
+  year={2025},
+  organization={Springer}
 }
 
 ## References 
