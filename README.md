@@ -1,3 +1,7 @@
+> **CurConMix+ — accepted in IEEE TMI.** For the TMI companion code and LLS48 dataset/checkpoint release instructions, see **[CurConMix-TMI](https://github.com/yongyong98/CurConMix-TMI)** and its [Releases](https://github.com/yongyong98/CurConMix-TMI/releases). Asset publication is in progress; follow the companion repository's current availability notes and published releases.
+>
+> This repository retains the original MICCAI 2025 CurConMix implementation and the existing download links below.
+
 # CurConMix: A Curriculum Contrastive Learning Framework for Enhancing Surgical Action Triplet Recognition
 
 ## MICCAI 2025 Early Accepted
