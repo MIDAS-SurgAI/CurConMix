@@ -1,4 +1,4 @@
-> **CurConMix+ — accepted in IEEE TMI.** For the TMI companion code and LLS48 dataset/checkpoint release instructions, see **[CurConMix-TMI](https://github.com/yongyong98/CurConMix-TMI)** and its [Releases](https://github.com/yongyong98/CurConMix-TMI/releases). Asset publication is in progress; follow the companion repository's current availability notes and published releases.
+> **CurConMix+ — accepted in IEEE TMI.** For the TMI companion code and LLS48 dataset/checkpoint release instructions, see **[CurConMix-TMI](https://github.com/yongyong98/CurConMix-TMI)** and its [Releases](https://github.com/yongyong98/CurConMix-TMI/releases). LLS48 data, MRTT checkpoints, and the verified spatial encoder bundles are now publicly available; see the companion repository for the exact released variants and usage instructions.
 >
 > This repository retains the original MICCAI 2025 CurConMix implementation and the existing download links below.
 
